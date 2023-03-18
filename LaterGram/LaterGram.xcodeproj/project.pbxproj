@@ -18,6 +18,7 @@
 		445723AD29C101EC0098ACED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445723AC29C101EC0098ACED /* User.swift */; };
 		445723AF29C102720098ACED /* UserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445723AE29C102720098ACED /* UserCollectionViewController.swift */; };
 		445723B229C104150098ACED /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445723B129C104150098ACED /* DateHelper.swift */; };
+		445723C129C582770098ACED /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445723C029C582770098ACED /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		445723AC29C101EC0098ACED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		445723AE29C102720098ACED /* UserCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewController.swift; sourceTree = "<group>"; };
 		445723B129C104150098ACED /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		445723C029C582770098ACED /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +68,12 @@
 		4457238629BFB81F0098ACED /* LaterGram */ = {
 			isa = PBXGroup;
 			children = (
+				445723A029C0FF530098ACED /* GoogleService-Info-2.plist */,
+				4457238D29BFB81F0098ACED /* Main.storyboard */,
 				445723AB29C101E10098ACED /* Model */,
 				445723A829C101BF0098ACED /* Views */,
 				445723A729C100740098ACED /* Resources */,
 				445723B029C103FA0098ACED /* Helper Files */,
-				4457238D29BFB81F0098ACED /* Main.storyboard */,
-				445723A029C0FF530098ACED /* GoogleService-Info-2.plist */,
 			);
 			path = LaterGram;
 			sourceTree = "<group>";
@@ -91,7 +93,8 @@
 		445723A829C101BF0098ACED /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				445723AE29C102720098ACED /* UserCollectionViewController.swift */,
+				445723C229C582840098ACED /* Detail View */,
+				445723BF29C580AA0098ACED /* CollectionView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +113,22 @@
 				445723B129C104150098ACED /* DateHelper.swift */,
 			);
 			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		445723BF29C580AA0098ACED /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				445723AE29C102720098ACED /* UserCollectionViewController.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		445723C229C582840098ACED /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				445723C029C582770098ACED /* UserViewModel.swift */,
+			);
+			path = "Detail View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				445723B229C104150098ACED /* DateHelper.swift in Sources */,
+				445723C129C582770098ACED /* UserViewModel.swift in Sources */,
 				445723AD29C101EC0098ACED /* User.swift in Sources */,
 				4457238829BFB81F0098ACED /* AppDelegate.swift in Sources */,
 				4457238A29BFB81F0098ACED /* SceneDelegate.swift in Sources */,
