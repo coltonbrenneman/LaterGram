@@ -9,25 +9,29 @@
 /* Begin PBXBuildFile section */
 		4457238829BFB81F0098ACED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457238729BFB81F0098ACED /* AppDelegate.swift */; };
 		4457238A29BFB81F0098ACED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457238929BFB81F0098ACED /* SceneDelegate.swift */; };
-		4457238C29BFB81F0098ACED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4457238B29BFB81F0098ACED /* ViewController.swift */; };
 		4457238F29BFB81F0098ACED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4457238D29BFB81F0098ACED /* Main.storyboard */; };
 		4457239129BFB8210098ACED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4457239029BFB8210098ACED /* Assets.xcassets */; };
 		4457239429BFB8210098ACED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4457239229BFB8210098ACED /* LaunchScreen.storyboard */; };
 		445723A129C0FF530098ACED /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 445723A029C0FF530098ACED /* GoogleService-Info-2.plist */; };
 		445723A429C0FFAE0098ACED /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 445723A329C0FFAE0098ACED /* FirebaseFirestore */; };
 		445723A629C0FFAE0098ACED /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 445723A529C0FFAE0098ACED /* FirebaseStorage */; };
+		445723AD29C101EC0098ACED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445723AC29C101EC0098ACED /* User.swift */; };
+		445723AF29C102720098ACED /* UserCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445723AE29C102720098ACED /* UserCollectionViewController.swift */; };
+		445723B229C104150098ACED /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445723B129C104150098ACED /* DateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4457238429BFB81F0098ACED /* LaterGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaterGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4457238729BFB81F0098ACED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4457238929BFB81F0098ACED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4457238B29BFB81F0098ACED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4457238E29BFB81F0098ACED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4457239029BFB8210098ACED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4457239329BFB8210098ACED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4457239529BFB8210098ACED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		445723A029C0FF530098ACED /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
+		445723AC29C101EC0098ACED /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		445723AE29C102720098ACED /* UserCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewController.swift; sourceTree = "<group>"; };
+		445723B129C104150098ACED /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,16 +66,50 @@
 		4457238629BFB81F0098ACED /* LaterGram */ = {
 			isa = PBXGroup;
 			children = (
-				4457238729BFB81F0098ACED /* AppDelegate.swift */,
-				4457238929BFB81F0098ACED /* SceneDelegate.swift */,
-				4457238B29BFB81F0098ACED /* ViewController.swift */,
+				445723AB29C101E10098ACED /* Model */,
+				445723A829C101BF0098ACED /* Views */,
+				445723A729C100740098ACED /* Resources */,
+				445723B029C103FA0098ACED /* Helper Files */,
 				4457238D29BFB81F0098ACED /* Main.storyboard */,
-				4457239029BFB8210098ACED /* Assets.xcassets */,
-				4457239229BFB8210098ACED /* LaunchScreen.storyboard */,
-				4457239529BFB8210098ACED /* Info.plist */,
 				445723A029C0FF530098ACED /* GoogleService-Info-2.plist */,
 			);
 			path = LaterGram;
+			sourceTree = "<group>";
+		};
+		445723A729C100740098ACED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4457238729BFB81F0098ACED /* AppDelegate.swift */,
+				4457238929BFB81F0098ACED /* SceneDelegate.swift */,
+				4457239029BFB8210098ACED /* Assets.xcassets */,
+				4457239529BFB8210098ACED /* Info.plist */,
+				4457239229BFB8210098ACED /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		445723A829C101BF0098ACED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				445723AE29C102720098ACED /* UserCollectionViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		445723AB29C101E10098ACED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				445723AC29C101EC0098ACED /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		445723B029C103FA0098ACED /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				445723B129C104150098ACED /* DateHelper.swift */,
+			);
+			path = "Helper Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4457238C29BFB81F0098ACED /* ViewController.swift in Sources */,
+				445723B229C104150098ACED /* DateHelper.swift in Sources */,
+				445723AD29C101EC0098ACED /* User.swift in Sources */,
 				4457238829BFB81F0098ACED /* AppDelegate.swift in Sources */,
 				4457238A29BFB81F0098ACED /* SceneDelegate.swift in Sources */,
+				445723AF29C102720098ACED /* UserCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LaterGram/Info.plist;
+				INFOPLIST_FILE = LaterGram/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LaterGram/Info.plist;
+				INFOPLIST_FILE = LaterGram/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
